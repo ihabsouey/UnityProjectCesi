@@ -4,6 +4,7 @@ using Unity.Netcode;
 
 [RequireComponent(typeof(CharacterController))]
 [RequireComponent(typeof(PlayerInput))]
+
 public class FPSController : NetworkBehaviour
 {
     #region public
@@ -15,6 +16,7 @@ public class FPSController : NetworkBehaviour
     [Header("Camera values")]
     public float LookSpeed = 2.0f;
     public float LookXLimit = 45.0f;
+    public bool isEditor = false;
     #endregion
 
 
@@ -80,7 +82,7 @@ public class FPSController : NetworkBehaviour
     
     void Update()
     {
-        if (!IsOwner)
+       if (!IsOwner &&  !isEditor)
             return;
 
         if (Input.GetKeyDown(KeyCode.G))

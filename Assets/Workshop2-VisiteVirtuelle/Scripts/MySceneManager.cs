@@ -45,7 +45,7 @@ public class MySceneManager : MonoBehaviour
         {
             yield return null;
         }
-        Debug.Log("Host startedz");
+        Debug.Log("Host started");
 
         // Start the server/host
         networkManager.StartHost();

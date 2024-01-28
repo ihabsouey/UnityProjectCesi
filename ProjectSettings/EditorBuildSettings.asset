@@ -17,4 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Workshop2-VisiteVirtuelle/Scenes/Lab.unity
     guid: 689e66893a0cd5a4aa52f96278353c21
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: c7d28eb8ebc5994419693983eff3ba83,
+      type: 2}
